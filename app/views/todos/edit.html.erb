@@ -1,0 +1,16 @@
+<% content_for :title, "Edit Todo" %>
+
+<div class="container mt-4">
+  <h1 class="text-center text-primary mb-4">Edit Todo</h1>
+
+  <div class="card shadow-sm">
+    <div class="card-body">
+      <%= render "form", todo: @todo %>
+    </div>
+  </div>
+
+  <div class="mt-3 d-flex justify-content-between">
+    <%= link_to "← Back to Todos", todos_path, class: "btn btn-secondary" %>
+    <%= link_to "View Todo", @todo, class: "btn btn-info" %>
+  </div>
+</div>
